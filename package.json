@@ -1,0 +1,33 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "My website that will be hosted on Azure! TODO: write up a blog post and documentation here on how things are built, deployed and hosted.",
+  "main": "index.js",
+  "dependencies": {
+    "@node_modules/@bower_components/custombox": "dixso/custombox#^4.0.1",
+    "@node_modules/@bower_components/foundation-sites": "zurb/foundation-sites#^6.3.1",
+    "@node_modules/@bower_components/jqcloud2": "mistic100/jQCloud#^2.0.2",
+    "@node_modules/@bower_components/jquery": "jquery/jquery-dist#>= 2.2.0",
+    "@node_modules/@bower_components/normalize-css": "necolas/normalize.css#^6.0.0",
+    "@node_modules/@bower_components/typed.js": "mattboldt/typed.js#^1.1.7",
+    "@node_modules/@bower_components/what-input": "ten1seven/what-input#~4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@node_modules/@bower_components'), 'node_modules/@bower_components', 'junction') } catch (e) { }\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveops1/daveops-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daveops1/daveops-site/issues"
+  },
+  "homepage": "https://github.com/daveops1/daveops-site#readme",
+  "engines": {
+    "yarn": ">= 1.0.0"
+  }
+}
