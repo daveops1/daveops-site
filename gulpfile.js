@@ -26,4 +26,16 @@ function css(cb) {
   //cb();
 }
 
-exports.default = parallel(javascript, css);
+function html(cb) {
+  return gulp.src('*.html')
+      .pipe(gulp.dest('public/build'));
+//cb();
+}
+
+function assets(cb) {
+  return gulp.src('assets/*')
+      .pipe(gulp.dest('public/build/assets'));
+//cb();
+}
+
+exports.default = parallel(javascript, css, html, assets);
