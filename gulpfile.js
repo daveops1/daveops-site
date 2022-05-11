@@ -27,7 +27,7 @@ function css(cb) {
 }
 
 function html(cb) {
-  return gulp.src('*.html')
+  return gulp.src(['*.html', 'CNAME'])
       .pipe(gulp.dest('public/build'));
 //cb();
 }
