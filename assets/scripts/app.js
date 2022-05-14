@@ -79,6 +79,7 @@ const Portfolio = function() {
 
 }();
 
-
-Portfolio.displayWordCloud();
-Portfolio.typeAnimation();
+$(document).ready(function () {
+	Portfolio.displayWordCloud();
+	Portfolio.typeAnimation();
+});
