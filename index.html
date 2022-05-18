@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
 	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
+	<link rel="stylesheet" href="css2/stylesheet.css">
 </head>
 
 <body>
@@ -124,22 +125,102 @@
 
 		</section>
 
-		<section id="teaching">
-			<h2 class="text-center">Teaching</h2>
-			<div class="row">
-				<div class="small-12 medium-8 medium-offset-2">
-					<p class="text-center tag-line">I've taught programming and mentored many
-						students and professionals both in person and remotely. Here are some of the domains I've helped
-						students with...</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 medium-8 medium-offset-2 columns">
-					<div class="teaching-domains">
-					</div>
-				</div>
-			</div>
-		</section>
+		<section id="portfolio">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="row">
+                <p class="text-center tag-line">During my career, I've had the chance to lead and manage projects from
+                    basic departmental web applications projects to complex, multi-enterprise, large-scale projects.</p>
+            </div>
+            <div class="row content-block text-center" id="portfolio">
+                <div class="isotope portfolio-items">
+                    <div class="element-item grid">
+                        <div>
+                            <img class="img-responsive" alt="Portfolio" src="assets/images/portfolio-intro.png">
+                                <h5 class="info">At a Glance</h4>
+                                <p class="info">
+                                    Empathetic technologist helping everyone do their best work.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="element-item grid">
+                        <div>
+                            <img class="img-responsive" alt="Portfolio" src="assets/images/portfolio-ksa.png">
+                                <h5 class="info">How I Can Help</h4>
+                                <p class="info">
+                                    <!--I am good at following through and getting things done enthusiastically and
+                                    competently.--><a href="background-summary.html"><i class="fi-clipboard-notes my-button"> Learn More</i></a>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="element-item grid">
+                        <div>
+                            <img class="img-responsive" alt="Portfolio" src="assets/images/portfolio-success.png">
+                                <h5 class="info">Success Stories</h4>
+                                <p class="info">
+                                    <!--Informative case studies of successful project deliveries.<br />--><a href="success.html"><i class="fi-clipboard-notes my-button"> Learn More</i></a>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="element-item grid">
+                        <div>
+                            <img class="img-responsive" alt="Portfolio" src="assets/images/portfolio-certs.png">
+                                <h5 class="info">Awards & Certifications</h4>
+                                <p class="info">
+                                    <!--Awards and achievements received during my career.<br />--><a href="awards.html"><i class="fi-clipboard-notes my-button">See more...</i></a>
+                                </p>
+                        </div>
+                    </div>
+                </div> <!-- isotope portfolio-items -->
+            </div>
+        </section>
+
+		<section id="testimonials">
+            <div class="row" id="testimonials">
+                <h2 class="text-center">Who I've Worked With</h2>
+                <div class="owl-carousel">
+                    <div class="owl-item">
+                        <div class="testimonial">
+                            <img alt="Client Photo" src="assets/images/testimonial-lamb.jpg">
+                            <p>David demonstrates leadership, good communication, sharp technical skills, a willingness to learn, a willingness to teach others, and is driven to get the job done.</p>
+                            <strong>Emmit Lamb</strong><br>
+                            <span>Manager, Clark County Elections Department</span>
+                        </div>
+                    </div> <!-- owl-item -->
+                    <div class="owl-item">
+                        <div class="testimonial">
+                            <img alt="Client Photo" src="assets/images/testimonial-director.jpg">
+                            <p>Thank you David Horton our "Stretchy Superhero."  You got pulled in many directions but always came back and supported Business License.</p>
+                            <strong>Jacqueline Holloway</strong><br>
+                            <span>Director, Clark County Business License Department</span>
+                        </div>
+                    </div> <!-- owl-item -->
+                    <div class="owl-item">
+                        <div class="testimonial">
+                            <img alt="Client Photo" src="assets/images/testimonial-trojan.png">
+                            <p>Built real-time eligibility back-end systems and Open Dental plugin to retrieve real-time insurance eligibility information.</p>
+                            <strong>Trojan Professional Services</strong><br>
+                            <span>Software Architect</span>
+                        </div>
+                    </div> <!-- owl-item -->
+                    <div class="owl-item">
+                        <div class="testimonial">
+                            <img alt="Client Photo" src="assets/images/testimonial-firedept.gif">
+                            <p>Built and maintained mission-critical software systems for fire department and emergency staff.</p>
+                            <strong>Clark County Fire Department</strong><br>
+                            <span>Senior Software Developer</span>
+                        </div>
+                    </div> <!-- owl-item -->
+                    <div class="owl-item">
+                        <div class="testimonial">
+                            <img alt="Client Photo" src="assets/images/testimonial-cc.png">
+                            <p>Rebuilt 1960's mainframe criminal justice system to modern technology frameworks for better reliability and accuracy.</p>
+                            <strong>Clark County District Courts</strong><br>
+                            <span>Lead Software Developer</span>
+                        </div>
+                    </div> <!-- owl-item -->
+                </div> <!-- owl-carousel -->
+            </div> <!-- row -->
+        </section>
 
 		<section id="footer-cta">
 			<h2 class="text-center">I would love to work with you!</h2>
@@ -175,6 +256,32 @@
 			</div>
 		</footer>
 	</div>
+	<!-- js -->
+    <script src="js2/bundle.js"></script>
+
+	<script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
+                    }
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
